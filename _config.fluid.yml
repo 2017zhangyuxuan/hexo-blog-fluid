@@ -723,7 +723,7 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: 'https://blog-api-lm4euax2j-2017zhangyuxuan.vercel.app'
+  serverURL: 'https://blog-api-cwpbgt9h8-2017zhangyuxuan.vercel.app'
   path: window.location.pathname
   placeholder: '期待地搓搓手~'
   meta: ['nick', 'mail', 'link']
