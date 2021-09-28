@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 2021-09-25 21:46:02
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -39,7 +40,7 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
 ### 取消评论时显示浏览器内核与操作系统信息
 
-source/css/main.styl 路径下添加
+hexo-theme-fluid/source/css/main.styl 路径下添加 (不过好像只有本地预览有效，部署到Github pages上依然不生效；在Vercel部署的，同样也已经生效了)
 
 ```css
 .vmeta {
