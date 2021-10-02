@@ -83,11 +83,11 @@ fun_features:
 
     # 打印速度，数字越大越慢
     # Typing speed, the larger the number, the slower
-    typeSpeed: 60
+    typeSpeed: 40
 
     # 游标字符
     # Cursor character
-    cursorChar: "_"
+    cursorChar: ""
 
     # 是否循环播放效果
     # If true, loop animation
@@ -309,7 +309,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -421,7 +421,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/default.png
+  banner_img: /img/yourname.png
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -493,7 +493,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default.png
+  banner_img: /img/yourname6.png
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -551,7 +551,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: false
+    enable: true
 
     # 描述文字
     # Descriptive text before date
@@ -603,7 +603,7 @@ post:
     enable: true
     # 脚注的节标题，也可以在 front-matter 中通过 `footnote: <h2>Reference</h2>` 这种形式修改单独页面的 header
     # The section title of the footnote, you can also modify the header of a single page in the form of `footnote: <h2>Reference</h2>` in front-matter
-    header: ''
+    header: '<h2>备注/参考</h2>'
 
   # 数学公式，开启之前需要更换 Markdown 渲染器，否则复杂公式会有兼容问题，具体请见：https://hexo.fluid-dev.com/docs/guide/##latex-数学公式
   # Mathematical formula. If enable, you need to change the Markdown renderer, see: https://hexo.fluid-dev.com/docs/en/guide/#math
@@ -786,7 +786,7 @@ cusdis:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: /img/yourname2.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -798,7 +798,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/yourname3.jpeg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -828,7 +828,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/yourname4.png
   banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle:
@@ -846,19 +846,20 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/向日葵.jpg
+  banner_img: /img/yourname7.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
-  avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant theme for Hexo"
+  avatar: /img/about.JPG
+  name: "向阳而生"
+  intro: "暗夜之王，向阳而生"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/2017zhangyuxuan", tip: "GitHub" }
+    - { class: "iconfont icon-bilibili", link: "https://space.bilibili.com/1891289", tip: "B站" }
+    - { class: "iconfont icon-qq-fill", qrcode: "/img/qq.jpeg"}
+    - { class: "iconfont icon-wechat-fill", qrcode: "/img/Wechat.jpeg" }
 
 
 #---------------------------
@@ -880,10 +881,10 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default.png
-  banner_img_height: 85
+  banner_img: /img/404.jpeg
+  banner_img_height: 100
   banner_mask_alpha: 0.3
-  subtitle: "Page not found"
+  subtitle: "你要找的页面被黑洞吞噬啦(=・ω・=)"
 
 
 #---------------------------
@@ -892,19 +893,19 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/yourname5.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
   # 友链的成员项
   # Member item of page
   items:
-    - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
-    }
+    # - {
+    #  title: "Fluid Blog",
+    #  intro: "主题博客",
+    #  link: "https://hexo.fluid-dev.com/",
+    #  avatar: "/img/favicon.png"
+    #}
     - {
       title: "Fluid Docs",
       intro: "主题使用指南",
@@ -912,11 +913,17 @@ links:
       avatar: "/img/favicon.png"
     }
     - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
+      title: "ZZM的博客",
+      intro: "友情赞助~",
+      link: "https://aliez22.github.io/",
+      avatar: "/img/zzm.jpeg"  
     }
+    #- {
+    #  title: "Fluid Repo",
+    #  intro: "主题 GitHub 仓库",
+    #  link: "https://github.com/fluid-dev/hexo-theme-fluid",
+    #  avatar: "/img/favicon.png"
+    #}
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
